@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amber | TÂY BẮC HỒ XÁ</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <nav class="nav container">
+        <div class="logo">
+          <img src="./assert/img/logo.png" alt="Logo" />
+        </div>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#!" class="menu__link"> Chủ Đầu Tư </a>
+          </li>
+          <li class="menu__item">
+            <a href="#!" class="menu__link active"> Tổng Quan KCN </a>
+            <ul class="sub_menu">
+              <li class="sub_menu__item">
+                <a class="sub_menu__link" href="">Tổng Quan</a>
+              </li>
+              <li class="sub_menu__item">
+                <a class="sub_menu__link" href="">Sơ Đồ Phân Khu</a>
+              </li>
+              <li class="sub_menu__item">
+                <a class="sub_menu__link" href="">Sản Phẩm</a>
+              </li>
+              <li class="sub_menu__item">
+                <a class="sub_menu__link" href="">Cơ Sở Hạ Tầng</a>
+              </li>
+              <li class="sub_menu__item">
+                <a class="sub_menu__link" href="">Ngành Nghề Thu Hút</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#!" class="menu__link"> Ưu Thế Tây Bắc Hồ Xá </a>
+            <ul class="sub_menu">
+              <li class="sub_menu__item">
+                <a class="sub_menu__link" href="">Lợi Thế Cạnh Tranh</a>
+              </li>
+              <li class="sub_menu__item">
+                <a class="sub_menu__link" href="">Vị Trí Chiến Lược</a>
+              </li>
+              <li class="sub_menu__item">
+                <a class="sub_menu__link" href=""
+                  >Chính Sách Khuyến Khích Đầu Tư</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#!" class="menu__link"> Quảng Trị </a>
+            <ul class="sub_menu">
+              <li class="sub_menu__item">
+                <a class="sub_menu__link" href="">Khả Năng Kết Nối</a>
+              </li>
+              <li class="sub_menu__item">
+                <a class="sub_menu__link" href="">Nguồn Nguyên, Vật Liệu</a>
+              </li>
+              <li class="sub_menu__item">
+                <a class="sub_menu__link" href=""
+                  >Chi Phí Lao Động Cạnh Tranh</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#!" class="menu__link"> Tin Tức </a>
+          </li>
+          <li class="menu__item">
+            <a href="#!" class="menu__link"> Liên Hệ </a>
+          </li>
+          <li class="menu__item">
+            <a href="#!" class="menu__link"> 
+                <img src="./assert/img/lang.png" alt="">
+            </a>
+            <ul class="sub_menu">
+                <li class="sub_menu__item">
+                  <a class="sub_menu__link" href="">EN</a>
+                </li>
+                <li class="sub_menu__item">
+                  <a class="sub_menu__link" href="">VI</a>
+                </li>
+              </ul>
+          </li>
+          <li class="menu__item search">
+            <a href="#!" class="menu__link">
+                <img src="./assert/img/search.png" alt="">
+            </a>
+            <div class="input-search flex">
+                <input type="text" name="" id="">
+                <div class="btn-search">
+                    Search
+                </div>
+            </div>
+          </li>
+        </ul>
+        <div class="nav-bar">
+            <img src="./assert/img/nav-bar.png" alt="Bar">
+        </div>
+      </nav>
+      <div class="overlay"></div>
+      <div class="slides">
+        <div class="slide fade">
+            <div class="slide__image">
+                <img src="./assert/img/banner2.png" alt="banner" />
+              </div>
+              <div class="slide__content">
+                <div class="container">
+                  <h3>Tổng quan khu công nghiệp</h3>
+                  <h2>Cùng nhau chúng ta tạo nên một tương lai tốt đẹp hơn</h2>
+                </div>
+              </div>
+        </div>
+        <div class="slide fade">
+            <div class="slide__image">
+                <img src="./assert/img/banner2.png" alt="banner" />
+              </div>
+              <div class="slide__content">
+                <div class="container">
+                  <h3>Mặt bằng phân khu</h3>
+                  <h2>Cùng nhau chúng ta tạo nên một tương lai tốt đẹp hơn</h2>
+                </div>
+              </div>
+        </div>
+        <div class="slide fade">
+            <div class="slide__image">
+                <img src="./assert/img/banner2.png" alt="banner" />
+              </div>
+              <div class="slide__content">
+                <div class="container">
+                  <h3>Sản phẩm</h3>
+                  <h2>Cùng nhau chúng ta tạo nên một tương lai tốt đẹp hơn</h2>
+                </div>
+              </div>
+        </div>
+
+        <a class="prev" id="js-prev">
+            &#8592;
+        </a>
+        <a class="next" id="js-next">
+            &#8594;
+        </a>
+
+        <div class="slide__dot">
+          <div class="dot" data-n="1"></div>
+          <div class="dot" data-n="2"></div>
+          <div class="dot" data-n="3"></div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- tabs start -->
+    <div class="tabs">
+      <div class="container">
+        <div class="tab" data-id="dashboard">
+          <span class="active"> Tổng quan </span>
+        </div>
+        <div class="tab" data-id="flat">
+          <span> Mặt bằng phân khu </span>
+        </div>
+        <div class="tab" data-id="product">
+          <span> Sản phẩm </span>
+        </div>
+        <div class="tab" data-id="infrastructure">
+          <span> Cơ sở hạ tầng </span>
+        </div>
+        <div class="tab" data-id="job">
+          <span> Nghành nghề thu hút </span>
+        </div>
+      </div>
+    </div>
+    <!-- tabs end -->
+    <!-- main start -->
+    <main>
+      <section class="section dashboard" id="dashboard">
+        <div class="container">
+          <div class="heading-one">Khu Công Nghiệp Tây Bắc Hồ Xá</div>
+          <div class="heading-two">
+            Quy mô 214,77ha nằm trên địa bàn huyện Vĩnh Linh, tỉnh Quảng Trị có
+            vị trí vô cùng đắc địa.
+          </div>
+          <div class="info">
+            <div class="left">
+              <p><b>Chủ đầu tư:</b> Công ty Cổ phần Quang Anh Quảng Trị</p>
+              <p><b>Tổng mức đầu tư:</b> 925 tỷ VNĐ</p>
+              <p><b>Tổng diện tích:</b> 214,77 ha</p>
+              <p>
+                <b>Vị trí:</b> Huyện Vĩnh Linh, tỉnh Quảng Trị, nằm ngay trục
+                Quốc lộ 1A, cách trung tâm thành phố Đông Hà 35km, kết nối giao
+                thương thuận lợi với các cảng Cửa Việt (35km), cảng Chân Mây
+                (170km), cảng Mỹ Thuỷ (60km)
+              </p>
+              <p><b>Thời gian vận hành dự kiến:</b> Quý 2/2023</p>
+            </div>
+            <div class="right">
+              <p>
+                Sở hữu lợi thế về hệ thống hạ tầng giao thông như nằm ngay trên
+                trục đường quốc lộ 1A, kế cận nhiều cảng biển, sân bay lớn…
+                Nguồn lao động dồi dào được đào tạo bài bản, cùng vị trí nằm gần
+                nguồn tài nguyên phong phú chính là những ưu thế đặc biệt để KCN
+                Tây Bắc Hồ Xá trở thành trung tâm kinh tế mới của Quảng Trị
+                trong tương lai.
+              </p>
+              <p>
+                KCN Tây Bắc Hồ Xá chia thành 2 phân khu, khu A diện tích 116,54
+                ha và khu B diện tích 98,23 ha.
+              </p>
+            </div>
+          </div>
+          <div class="map">
+            <img src="./assert/img/map.png" alt="Map" />
+            <div class="map__plain">
+                <img src="./assert/img/a2.png" alt="">
+                <img src="./assert/img/a1.png" alt="">
+                <div class="map__preview">
+                    <img src="./assert/img/product_1.png" alt="">
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section flat" id="flat">
+        <div class="container">
+          <h2 class="heading">
+            Mặt Bằng Phân Khu
+            <div class="corner-borders corner-borders--left"></div>
+            <div class="corner-borders corner-borders--right"></div>
+          </h2>
+          <div class="flat__info">
+            <div>
+              <div class="flat__rerectangle"></div>
+              <span>đất xây dựng nhà máy</span>
+            </div>
+            <div>
+              <div class="flat__rerectangle"></div>
+              <span>các khu đầu nối hạ tầng kỹ thuật</span>
+            </div>
+            <div>
+              <div class="flat__rerectangle"></div>
+              <span>đất khu trung tâm điều hành / quản lý</span>
+            </div>
+            <div>
+              <div class="flat__rerectangle"></div>
+              <span>Khu vực cây xanh</span>
+            </div>
+          </div>
+          <div class="flat__item">
+              <div class="left">
+                <span class="text-one">KHU A</span></br>
+                <span class="text-two">116,54 HA</span>
+              </div>
+              <div class="right">
+                  <img src="./assert/img/flat_1.png" alt="Flat">
+                  <div class="flat__number">
+                      <span>1</span>
+                      <div class="flat__preview">
+                        Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="flat__item flat__reverse">
+            <div class="left">
+                <span class="text-one">KHU B</span></br>
+                <span class="text-two">116,54 HA</span>
+              </div>
+              <div class="right">
+                  <img src="./assert/img/flat_1.png" alt="Flat">
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="section product" id="product">
+          <div class="container">
+            <h2 class="heading">
+                Sản Phẩm
+                <div class="corner-borders corner-borders--left"></div>
+                <div class="corner-borders corner-borders--right"></div>
+            </h2>
+            <div class="info">
+                <div class="left">
+                    <div class="title">
+                        Thuê đất & hạ tầng
+                    </div>
+                    <p>
+                        Quỹ đất công nghiệp cho thuê: 158,12 ha </br>
+                        Khu A: 84,25 ha  </br>
+                        Khu B: 73,87 ha  </br>
+                        Thời hạn thuê: 50 năm (đến 2071)
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Thuê văn phòng
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Nhà xưởng/Kho xây theo yêu cầu
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="./assert/img/product_1.png" alt="Product">
+                </div>
+            </div>
+          </div>
+      </section>
+      <section class="section infrastructure" id="infrastructure">
+        <div class="container">
+          <h2 class="heading">
+                Cơ Sở Hạ Tầng
+              <div class="corner-borders corner-borders--left"></div>
+              <div class="corner-borders corner-borders--right"></div>
+          </h2>
+          <div class="infrastructure-item">
+            <div class="infrastructure-title">
+                <div class="left">
+                    <div class="heading-title">
+                        Hạ Tầng Kỹ Thuật
+                    </div>
+                </div>
+                <div class="right flex">
+                    <div id="js-prev-technique">
+                        <span>&#8592;</span>
+                    </div>
+                    <div id="js-next-technique">
+                        <span>&#8594;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="technique">
+                <div class="flex card-container" id="js-technique-card-container">
+                    <div class="card">
+                        <div class="card__title">
+                            Giao thông nội bộ
+                        </div>
+                        <div class="card__content">
+                            <p>
+                                Trục chính 30 - 45m, trục nhánh 13,5 - 19,5 m. Các tuyến giao thông nội bộ quy hoạch theo mạng lưới ô vuông bàn cờ, đảm bảo tiếp cận thuận lợi các khu đất nhà máy
+                            </p>
+                            <div class="image">
+                                <img src="./assert/img/technique_1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__title">
+                            Nguồn điện
+                        </div>
+                        <div class="card__content">
+                            <p>
+                                Điện áp 22kV hạ tại cổng nhà máy, đầu nối từ trạm biến áp 100/22kV - 40MVA.
+                            </p>
+                            <div class="image">
+                                <img src="./assert/img/technique_2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__title">
+                            Nguồn điện
+                        </div>
+                        <div class="card__content">
+                            <p>
+                                Điện áp 22kV hạ tại cổng nhà máy, đầu nối từ trạm biến áp 100/22kV - 40MVA.
+                            </p>
+                            <div class="image">
+                                <img src="./assert/img/technique_2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__title">
+                            Nguồn điện
+                        </div>
+                        <div class="card__content">
+                            <p>
+                                Điện áp 22kV hạ tại cổng nhà máy, đầu nối từ trạm biến áp 100/22kV - 40MVA.
+                            </p>
+                            <div class="image">
+                                <img src="./assert/img/technique_2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="infrastructure-item">
+            <div class="infrastructure-title">
+                <div class="heading-title">
+                    Hạ Tầng Dịch Vụ
+                </div>
+            </div>
+            <div class="service">
+                <div class="service__item">
+                    <div class="title">
+                        An ninh hoạt động 24/7
+                    </div>
+                    <div class="image">
+                        <img src="./assert/img/service_1.png" alt="Service">
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="title">
+                        Phòng cháy chữa cháy hoạt động 24/7
+                    </div>
+                     <div class="image">
+                        <img src="./assert/img/service_2.png" alt="Service">
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="title">
+                        Hệ thống viễn thông tiêu chuẩn quốc tế
+                    </div>
+                     <div class="image">
+                        <img src="./assert/img/service_3.png" alt="Service">
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="title">
+                        Hệ thống kho vận
+                    </div>
+                     <div class="image">
+                        <img src="./assert/img/service_4.png" alt="Service">
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="title">
+                        Dịch vụ hỗ trợ 1 cửa
+                    </div>
+                     <div class="image">
+                        <img src="./assert/img/service_5.png" alt="Service">
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="title">
+                        Hỗ trợ thông tin, tư vấn môi trường kinh doanh
+                    </div>
+                     <div class="image">
+                        <img src="./assert/img/service_6.png" alt="Service">
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="title">
+                        Tổ chức hội thảo xúc tiến đầu tư 
+                    </div>
+                     <div class="image">
+                        <img src="./assert/img/service_7.png" alt="Service">
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="title">
+                        Tiện ích dịch vụ khác: trạm xăng, ngân hàng…
+                    </div>
+                     <div class="image">
+                        <img src="./assert/img/service_8.png" alt="Service">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="infrastructure-item">
+            <div class="infrastructure-title">
+                <div class="heading-title">
+                    Hạ Tầng Xã Hội
+                </div>
+            </div>
+            <div class="community">
+                <div class="title">
+                    Khu công nghiệp Tây Bắc Hồ Xá được hỗ trợ bởi hệ thống hạ tầng xã hội đồng bộ gồm:
+                </div>
+                <div class="card">
+                    <div class="card__item">
+                        <div class="image">
+                            <img src="./assert/img/community_1.png" alt="Community">
+                        </div>
+                        <div class="desc">
+                            2 dự án nhà ở cho chuyên gia và công nhân
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="image">
+                            <img src="./assert/img/community_2.png" alt="Community">
+                        </div>
+                        <div class="desc">
+                            2 dự án nhà ở cho chuyên gia và công nhân
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <div class="image">
+                            <img src="./assert/img/community_3.png" alt="Community">
+                        </div>
+                        <div class="desc">
+                            2 dự án nhà ở cho chuyên gia và công nhân
+                        </div>
+                    </div>
+                </div>
+                <div class="end">Chỉ mất 20 phút di chuyển từ KCN Tây Bắc Hồ Xá đến thành phố Đông Hà, thủ phủ của tỉnh Quảng Trị nơi mọi nhu cầu đều được đáp ứng</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section job" id="job">
+        <div class="container">
+            <h2 class="heading">
+                Nghành Nghề Thu Hút
+                <div class="corner-borders corner-borders--left"></div>
+                <div class="corner-borders corner-borders--right"></div>
+            </h2>
+            <div class="info">
+                <div class="left">
+                    <ul>
+                        <li class="js-job" data-img="./assert/img/job.png">
+                            <span>
+                                Dệt may, da giày
+                            </span>
+                        </li>
+                        <li class="js-job" data-img="./assert/img/map.png">
+                            <span>
+                                Sản xuất kim loại, đồ kim hoàn,giả kim hoàn
+                            </span>
+                        </li>
+                        <li class="js-job" data-img="./assert/img/job.png">
+                            <span>
+                                Sản xuất sản phẩm Thủ công mỹ nghệ
+                            </span>
+                        </li>
+                        <li class="js-job" data-img="./assert/img/job.png">
+                            <span>
+                                Chế biến gỗ và sản xuất sản
+                                phẩm từ gỗ, tre, nứa
+                            </span>
+                        </li>
+                        <li class="js-job" data-img="./assert/img/job.png">
+                            <span>
+                                Cơ khí lắp ráp
+                            </span>
+                        </li>
+                        <li class="js-job" data-img="./assert/img/job.png">
+                            <span>
+                                Sản xuất chế biến thực phẩm
+                            </span>
+                        </li>
+                        <li class="js-job" data-img="./assert/img/job.png">
+                            <span>
+                                Kho bãi
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="image">
+                        <img id="js-preview-job" src="./assert/img/job.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="contract">
+            <div class="container">
+                <div class="title">
+                    Liên hệ với chúng tôi
+                </div>
+                <div class="content flex justify-content-between">
+                    <div class="left">
+                        <div class="content__top">
+                            <h1>
+                                Hãy liên hệ với chúng tôi.
+                            </h1>
+                            <h2>
+                                Chúng tôi mong chờ tin từ bạn.
+                            </h2>
+                        </div>
+                        <div class="contract-info flex">
+                            <div class="phone flex">
+                                <div class="mr-30">
+                                    <img src="./assert/img/phone.png" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>
+                                            Liên hệ
+                                        </span>
+                                    </div>
+                                    <div class="mt-10">
+                                        <span>(+84) 889.886.086</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mail flex">
+                                <div class="mr-30">
+                                    <img src="./assert/img/mail.png" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>Email</span>
+                                    </div>
+                                    <div class="mt-10">
+                                        <span>sales-ip@ambercapital.vn</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="#!" class="form">
+                            <div class="content">
+                                <div>
+                                    <input type="text" placeholder="Họ tên *">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Số điện thoại *">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Email *">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Nội dung">
+                                </div>
+                            </div>
+                            <div class="flex justify-content-between align-items-center">
+                                <div class="text-required">(*) Những trường yêu cầu phải nhập</div>
+                                <a href="#!" class="send">Gửi đi</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="right">
+                        <img src="./assert/img/contract-map.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="logo">
+                    <img src="./assert/img/logo.png" alt="">
+                </div>
+                <div class="footer__content">
+                    <div class="left">
+                        <div class="content__item">
+                            <div class="title">Chủ Đầu Tư</div>
+                            <ul>
+                                <li>
+                                    <a href="#!">
+                                        Về Quang Anh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        Các dự án của chúng tôi
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content__item">
+                            <div class="title">Tổng Quan KCN</div>
+                            <ul>
+                                <li>
+                                    <a href="#!">
+                                        Tổng Quan
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        Sơ đồ phân khu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        Cơ sở hạ tầng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        Ngành nghề thu hút
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content__item">
+                            <div class="title">Ưu Thế Tây Bắc Hồ Xá</div>
+                            <ul>
+                                <li>
+                                    <a href="#!">
+                                        Lợi thế cạnh tranh chung
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        Vị trí chiến lược
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        Chính sách đầu tư
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        Tiềm năng phát triển Tây Bắc
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        Hồ Xá
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content__item">
+                            <div class="title">Quảng Trị</div>
+                            <ul>
+                                <li>
+                                    <a href="#!">
+                                        Khả năng kết nối
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        Nguồn nguyên vật liệu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        Chi phí lao động
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content__item">
+                            <div class="title">Tin Tức</div>
+                            <ul>
+                                <li>
+                                    <a href="#!">
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        Tin tuyển dụng
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content__item">
+                            <div class="title">Liên Hệ</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="./assert/img/facebook.png" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assert/img/in.png" alt="In">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assert/img/youtube.png" alt="Youtube">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__end">
+                    <div class="copyright">
+                        &copy; 2022 TAY BAC HO XA INDUSTRY. All Rights Reserved.
+                    </div>
+                    <div class="auth">
+                        Design by Hungnt
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <div id="arrow-up">
+        &uarr;
+    </div>
+    <script src="/js/app.js" type="text/javascript"></script>
+  </body>
+</html>
+  
